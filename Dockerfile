@@ -1,0 +1,11 @@
+FROM centos:latest
+MAINTAINER Nick Campion <nick.campion@fasthosts.com>
+RUN yum install -y php-cli git vim lsof php-xml php-devel http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm; \
+    yum install -y php-pdo supervisor; \
+    git clone https://github.com/phoronix-test-suite/phoronix-test-suite.git; \
+    cd phoronix-test-suite/; \
+    bash install-sh;
+ADD phoronix-test-suite.xml /etc/phoronix-test-suite.xml
+ADD phoromatic.ini /etc/supervisord.d/phoromatic.ini
+ADD supervisord.conf /etc/supervisord.conf
+EXPOSE 8080 8088
