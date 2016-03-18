@@ -62,7 +62,7 @@
       <Password></Password>
       <WebSocketPort>8088</WebSocketPort>
       <AdvertiseServiceZeroConf>FALSE</AdvertiseServiceZeroConf>
-      <PhoromaticStorage>~/.phoronix-test-suite/phoromatic/</PhoromaticStorage>
+      <PhoromaticStorage>~/home/phoromatic/</PhoromaticStorage>
     </Server>
   </Options>
 </PhoronixTestSuite>
