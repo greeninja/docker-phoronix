@@ -1,5 +1,3 @@
-EXPOSE 22
-ronix Test Suite v6.2.2-->
 <?xml-stylesheet type="text/xsl" href="xsl/pts-user-config-viewer.xsl"?>
 <PhoronixTestSuite>
   <Options>
@@ -60,7 +58,7 @@ ronix Test Suite v6.2.2-->
       <ProxyPort></ProxyPort>
     </Networking>
     <Server>
-      <RemoteAccessPort>80</RemoteAccessPort>
+      <RemoteAccessPort>8080</RemoteAccessPort>
       <Password></Password>
       <WebSocketPort>8088</WebSocketPort>
       <AdvertiseServiceZeroConf>FALSE</AdvertiseServiceZeroConf>
