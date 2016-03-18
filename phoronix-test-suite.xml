@@ -60,7 +60,7 @@ ronix Test Suite v6.2.2-->
       <ProxyPort></ProxyPort>
     </Networking>
     <Server>
-      <RemoteAccessPort>8080</RemoteAccessPort>
+      <RemoteAccessPort>80</RemoteAccessPort>
       <Password></Password>
       <WebSocketPort>8088</WebSocketPort>
       <AdvertiseServiceZeroConf>FALSE</AdvertiseServiceZeroConf>

@@ -8,5 +8,5 @@ RUN yum install -y php-cli git vim lsof php-xml php-devel http://dl.fedoraprojec
 ADD phoronix-test-suite.xml /etc/phoronix-test-suite.xml
 ADD phoromatic.ini /etc/supervisord.d/phoromatic.ini
 ADD supervisord.conf /etc/supervisord.conf
-EXPOSE 80:8080 8088
+EXPOSE 80 8088
 CMD ["supervisord"]
