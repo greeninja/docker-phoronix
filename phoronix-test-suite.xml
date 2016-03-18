@@ -59,7 +59,7 @@
     </Networking>
     <Server>
       <RemoteAccessPort>8080</RemoteAccessPort>
-      <Password></Password>
+      <Password>Password123</Password>
       <WebSocketPort>8088</WebSocketPort>
       <AdvertiseServiceZeroConf>FALSE</AdvertiseServiceZeroConf>
       <PhoromaticStorage>~/home/phoromatic/</PhoromaticStorage>
