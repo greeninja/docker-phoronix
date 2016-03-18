@@ -9,3 +9,4 @@ ADD phoronix-test-suite.xml /etc/phoronix-test-suite.xml
 ADD phoromatic.ini /etc/supervisord.d/phoromatic.ini
 ADD supervisord.conf /etc/supervisord.conf
 EXPOSE 8080 8088
+CMD ["supervisord"]
