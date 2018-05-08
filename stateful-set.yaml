@@ -29,9 +29,18 @@ objects:
           env:
             - name: PHORONIX_URL
               value: ${URL}
+            - name: HTTP_PROXY
+              value: ${HTTP_PROXY}
+            - name: HTTPS_PROXY
+              value: ${HTTP_PROXY}
+            - name: http_proxy
+              value: ${HTTP_PROXY}
+            - name: https_proxy
+              value: ${HTTP_PROXY}
           volumeMounts:
           - name: storage
             mountPath: /home/phoromatic
+        runAsUser: 0
     volumeClaimTemplates:
     - metadata:
         name: storage
@@ -45,6 +54,10 @@ parameters:
   displayName: "Pod count to start"
   name: COUNT
   value: "1"
+- description: "Http proxy for container to use"
+  displayName: "Proxy address to add to container environment"
+  name: HTTP_PROXY
+  value: ""
 - description: "login url"
   displayName: "Phoronix master URL (iuncluding code)"
   name: URL
