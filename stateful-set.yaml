@@ -27,7 +27,7 @@ objects:
         - name: stress
           image: greeninja/phoronix-client
           env:
-            - name: PHORONIX-URL
+            - name: PHORONIX_URL
               value: ${URL}
           volumeMounts:
           - name: storage
