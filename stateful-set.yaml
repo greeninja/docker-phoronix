@@ -30,13 +30,13 @@ objects:
             - name: PHORONIX_URL
               value: ${URL}
             - name: HTTP_PROXY
-              value: ${HTTP_PROXY}
+              value: "http://${HTTP_PROXY}:${HTTP_PROXY_PORT}"
             - name: HTTPS_PROXY
-              value: ${HTTP_PROXY}
+              value: "http://${HTTP_PROXY}:${HTTP_PROXY_PORT}"
             - name: http_proxy
-              value: ${HTTP_PROXY}
+              value: "http://${HTTP_PROXY}:${HTTP_PROXY_PORT}"
             - name: https_proxy
-              value: ${HTTP_PROXY}
+              value: "http://${HTTP_PROXY}:${HTTP_PROXY_PORT}"
           volumeMounts:
           - name: storage
             mountPath: /home/phoromatic
@@ -57,6 +57,10 @@ parameters:
 - description: "Http proxy for container to use"
   displayName: "Proxy address to add to container environment"
   name: HTTP_PROXY
+  value: ""
+- description: "Http proxy port to use"
+  displayName: "Proxy port to add to container environment"
+  name: HTTP_PROXY_PORT
   value: ""
 - description: "login url"
   displayName: "Phoronix master URL (iuncluding code)"
