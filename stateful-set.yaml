@@ -24,7 +24,7 @@ objects:
       spec:
         terminationGracePeriodSeconds: 10
         containers:
-        - name: stress
+        - name: phoronix-client
           image: greeninja/docker-phoronix:client
           env:
             - name: PHORONIX_URL
@@ -49,6 +49,7 @@ objects:
         resources:
           requests:
             storage: 20Gi
+
 parameters:
 - description: "How many pods to start in the statefulset"
   displayName: "Pod count to start"
